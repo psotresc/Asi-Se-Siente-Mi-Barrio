@@ -1,6 +1,7 @@
 #! /usr/bin/env python
 
 #Programa desarrollado por Pablo Sotres para el proyecto Asi se siente mi Barrio 
+#Este fue un cambio importante
 
 # Todo esta conectado de la siguiente manera:
 ## Relays: 2(5V), 38(20) y 40(21) Relays
@@ -61,6 +62,7 @@ GPIO.setup(4,GPIO.IN,pull_up_down=GPIO.PUD_DOWN)
 # Led de Funcionamiento 
 GPIO.setup(16,GPIO.OUT)
 GPIO.output(16,GPIO.HIGH)
+
 #Funcion para correr los audios
 def playAudio(audio):
     directorio = "/home/pi/Desktop/rpi-rfid-video-master/"+audio
@@ -165,6 +167,9 @@ try:
         time.sleep(1)
 
         #Si los ID son iguales es el mismo y no cambia entonces regresa si
+        
+        #Acá quiero poner el sensor para evitar el tiempo
+        
         #Si llega al tiempo de espera, reproduce un audio. 
         if trueId == trueIDN:
             # print('Es el mismo')
