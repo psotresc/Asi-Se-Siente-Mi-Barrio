@@ -1,5 +1,7 @@
 #! /usr/bin/env python
 
+#Programa desarrollado por Pablo Sotres para el proyecto Asi se siente mi Barrio 
+
 # Todo esta conectado de la siguiente manera:
 ## Relays: 2(5V), 38(20) y 40(21) Relays
 ## RFID: 1(3.3), 6(GND) 19(MOSI),21(MISO),23(SCK), 24(SDA)
@@ -8,6 +10,7 @@
 ## LED: 36(16), 34(GND)
 ## Sensor: 4(5V), 14(GND), 16(23)
 
+#
 import pygame
 import RPi.GPIO as GPIO
 import SimpleMFRC522
