@@ -10,6 +10,7 @@
 ## LED: 36(16), 34(GND)
 ## Sensor: 4(5V), 14(GND), 16(23)
 
+# En esta Rama está este cambio 
 #
 import pygame
 import RPi.GPIO as GPIO
